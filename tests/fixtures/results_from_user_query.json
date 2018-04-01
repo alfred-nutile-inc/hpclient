@@ -1,0 +1,40 @@
+[
+    {
+        "_id": "5a98616248e29a0de0d9f88c",
+        "resource": "56eb3dc1ed9236fa1735919f",
+        "project": "5a27f69def32150d1188a9c3",
+        "projectName": "Foo Bar",
+        "projectType": "REGULAR",
+        "projectStatus": "STATUS_ACTIVE",
+        "date": "2018-03-01",
+        "minutes": 240,
+        "note": "blah blah",
+        "createdDate": "2018-03-01T20:24:02.343Z",
+        "updatedDate": "2018-03-01T20:24:40.771Z",
+        "metadata": "",
+        "status": "SUBMITTED",
+        "locked": false,
+        "creator": "56eb3dc1ed9236fa1735919f",
+        "categoryTemplateId": "56eb3dc1ed9236fa173591b3",
+        "categoryName": "Planned work"
+    },
+    {
+        "_id": "5a98617b48e29a0de0d9f990",
+        "resource": "56eb3dc1ed9236fa1735919f",
+        "project": "5a27f6bcef32150d1188aa39",
+        "projectName": "Foo Baz",
+        "projectType": "REGULAR",
+        "projectStatus": "STATUS_ACTIVE",
+        "date": "2018-03-01",
+        "minutes": 240,
+        "note": "blah blah",
+        "createdDate": "2018-03-01T20:24:27.414Z",
+        "updatedDate": "2018-03-01T20:24:39.134Z",
+        "metadata": "",
+        "status": "SUBMITTED",
+        "locked": false,
+        "creator": "56eb3dc1ed9236fa1735919f",
+        "categoryTemplateId": "56eb3dc1ed9236fa173591b3",
+        "categoryName": "Planned work"
+    }
+]

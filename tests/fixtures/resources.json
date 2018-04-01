@@ -1,0 +1,81 @@
+[
+    {
+        "_id": "56eb3dc1ed9236fa1735919f",
+        "email": "foo@bar.com",
+        "metadata": "",
+        "createdDate": "2016-03-17T23:29:05.180Z",
+        "updatedDate": "2017-07-31T01:09:24.755Z",
+        "note": "",
+        "firstName": "Alfred",
+        "lastName": "Foo",
+        "status": "STATUS_ACTIVE",
+        "role": "ROLE_OWNER",
+        "isProjectManager": true,
+        "links": {
+            "iconLink5": "fa-link",
+            "link5": "",
+            "iconLink4": "fa-link",
+            "link4": "",
+            "iconLink3": "fa-link",
+            "link3": "",
+            "iconLink2": "fa-link",
+            "link2": "",
+            "iconLink1": "fa-link",
+            "link1": ""
+        },
+        "billing": {
+            "useDefault": false,
+            "id": "57a9eb42f822a93217feba92",
+            "rate": 150
+        },
+        "customFields": [],
+        "useCustomAvailability": false
+    },
+    {
+        "_id": "56eb3dc1ed9236fa173591ac",
+        "email": "bar@foo.com",
+        "metadata": "",
+        "createdDate": "2016-03-17T07:57:06.855Z",
+        "updatedDate": "2018-01-30T10:20:39.813Z",
+        "note": "",
+        "firstName": "Alex",
+        "lastName": "Baz",
+        "status": "STATUS_ACTIVE",
+        "role": "ROLE_ACCOUNT_HANDLER",
+        "isProjectManager": false,
+        "links": {
+            "iconLink5": "fa-link",
+            "link5": "",
+            "iconLink4": "fa-link",
+            "link4": "",
+            "iconLink3": "fa-link",
+            "link3": "",
+            "iconLink2": "fa-link",
+            "link2": "",
+            "iconLink1": "fa-link",
+            "link1": ""
+        },
+        "billing": {
+            "useDefault": false,
+            "id": "57a9eb3ef822a93217feba8a",
+            "rate": 135
+        },
+        "customFields": [
+            {
+                "templateId": "57a9f760f822a93217fec2b9",
+                "_id": "57c6bf0642a45e0306baac7d",
+                "templateType": "CHECKBOX",
+                "templateLabel": "GIDM Status",
+                "choices": []
+            },
+            {
+                "templateId": "57c7fba5b889a80c06779be2",
+                "_id": "57c7fd1ca29e010706b89351",
+                "templateType": "NUMBER",
+                "templateLabel": "Timezone",
+                "value": "-9"
+            }
+        ],
+        "useCustomAvailability": false
+    }
+]
