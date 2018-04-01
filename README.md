@@ -29,6 +29,8 @@ Via Composer
 $ composer require alfred-nutile-inc/hpclient
 ```
 
+Once this is in place load your Laravel provider:
+
 ## Usage
 
 ```php
@@ -56,8 +58,8 @@ If you discover any security related issues, please email :author_email instead 
 
 ## Credits
 
-* [http://github.com/alnutile][link-author]
-* [All Contributors][link-contributors]
+*   [http://github.com/alnutile][link-author]
+*   [All Contributors][link-contributors]
 
 ## License
 
@@ -76,4 +78,5 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 [link-downloads]: https://packagist.org/packages/alfred-nutile-inc/hpclient
 [link-author]: https://github.com/:author_username
 [link-contributors]: ../../contributors
+
 .
