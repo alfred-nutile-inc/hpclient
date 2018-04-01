@@ -19,21 +19,17 @@ class HubPlannerProvider extends ServiceProvider
             'hpconfig'
         );
 
-        $this->app->singleton(Client::class, function () {
-            return new \GuzzleHttp\Client([
-                'base_uri' => 'https://api.hubplanner.com/',
-                'headers' => [
-                    'Authorization' => config('hpconfig.key'),
-                    'Accept' => 'application/json',
-                    'Content-Type' => 'application/json'
-                ]
-            ]);
-        });
-
         $this->app->singleton(
             HubPlannerClient::class,
             function () {
-                $client = \App::make(Client::class);
+                $client = new \GuzzleHttp\Client([
+                    'base_uri' => 'https://api.hubplanner.com/',
+                    'headers' => [
+                        'Authorization' => config('hpconfig.key'),
+                        'Accept' => 'application/json',
+                        'Content-Type' => 'application/json'
+                    ]
+                ]);
                 return new HubPlannerClient($client);
             }
         );

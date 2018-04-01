@@ -33,7 +33,7 @@ class CommentsReport extends BaseReports
 
         $this->iterateOverProjects($projects);
 
-        return $this->report;
+        return collect($this->report)->sortByDesc('created_date')->toArray();
     }
 
     protected function iterateOverProjects($projects)
@@ -43,9 +43,9 @@ class CommentsReport extends BaseReports
                 $this->sleepToNotOverDoApiLimits();
                 $project_trimmed =
                     $this->getTimeEntriesCommentsForProjectAndDateRange(
-                        $project['_id'],
-                        $this->range
-                    );
+                    $project['_id'],
+                    $this->range
+                );
                 $results = collect($project_trimmed)->transform(
                     function ($item) {
                         $transformed = [];
@@ -55,7 +55,7 @@ class CommentsReport extends BaseReports
                         $transformed['note'] = array_get($item, 'note');
                         return $transformed;
                     }
-                )->sortByDesc('created_date')->toArray();
+                )->toArray();
                 $this->report = array_merge($this->report, $results);
             }
         );

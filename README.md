@@ -29,7 +29,17 @@ Via Composer
 $ composer require alfred-nutile-inc/hpclient
 ```
 
-Once this is in place load your Laravel provider:
+Once this is in place load your Laravel provider `config/app.php`:
+
+```
+AlfredNutileInc\HubPlannerClient::class
+```
+
+Make sure to set your `.env` to:
+
+```
+HUBPLANNER_API_KEY=your_super_long_api_key
+```
 
 ## Usage
 
