@@ -48,9 +48,10 @@ class CommentsReport extends BaseReports
                     );
                 $results = collect($project_trimmed)->transform(
                     function ($item) {
+                        $date = Carbon::parse(array_get($item, 'createdDate')->format("m-d-Y"));
                         $transformed = [];
                         $transformed['user_name'] = array_get($item, 'user_name');
-                        $transformed['created_date'] = array_get($item, 'createdDate');
+                        $transformed['created_date'] = $date;
                         $transformed['project_name'] = array_get($item, 'projectName');
                         $transformed['note'] = array_get($item, 'note');
                         return $transformed;
