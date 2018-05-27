@@ -43,9 +43,9 @@ class CommentsReport extends BaseReports
                 $this->sleepToNotOverDoApiLimits();
                 $project_trimmed =
                     $this->getTimeEntriesCommentsForProjectAndDateRange(
-                    $project['_id'],
-                    $this->range
-                );
+                        $project['_id'],
+                        $this->range
+                    );
                 $results = collect($project_trimmed)->transform(
                     function ($item) {
                         $date = Carbon::parse(array_get($item, 'createdDate'))->format("m-d-Y");
