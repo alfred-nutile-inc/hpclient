@@ -43,12 +43,12 @@ class CommentsReport extends BaseReports
                 $this->sleepToNotOverDoApiLimits();
                 $project_trimmed =
                     $this->getTimeEntriesCommentsForProjectAndDateRange(
-                        $project['_id'],
-                        $this->range
-                    );
+                    $project['_id'],
+                    $this->range
+                );
                 $results = collect($project_trimmed)->transform(
                     function ($item) {
-                        $date = Carbon::parse(array_get($item, 'createdDate')->format("m-d-Y"));
+                        $date = Carbon::parse(array_get($item, 'createdDate'))->format("m-d-Y");
                         $transformed = [];
                         $transformed['user_name'] = array_get($item, 'user_name');
                         $transformed['created_date'] = $date;
